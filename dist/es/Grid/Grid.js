@@ -1045,7 +1045,8 @@ var Grid = function (_React$PureComponent) {
     key: 'getDerivedStateFromProps',
     value: function getDerivedStateFromProps(nextProps, prevState) {
       var newState = {};
-      let {instanceProps} = prevState;
+      // let {instanceProps} = prevState;
+      var instanceProps = prevState.instanceProps;
 
       if (nextProps.columnCount === 0 && prevState.scrollLeft !== 0 || nextProps.rowCount === 0 && prevState.scrollTop !== 0) {
         newState.scrollLeft = 0;
